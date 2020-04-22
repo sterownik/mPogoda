@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    Toast.makeText(getApplicationContext(), "powiodło sie", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "powiodło sie", Toast.LENGTH_LONG).show();
                     JSONObject main_obcject = response.getJSONObject("main");
 
                     JSONArray main_obcjecttwo = response.getJSONArray("weather");
