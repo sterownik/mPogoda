@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#368f8b"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/datagodzina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Data"
+            android:fontFamily="@font/reg"
+            android:id="@+id/datka"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:padding="20dp"
+            android:textSize="27dp"
+            android:layout_weight="0.5"
+            android:textColor="#f3dfc1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Godzina"
+            android:padding="20dp"
+            android:textSize="27dp"
+            android:fontFamily="@font/reg"
+            android:id="@+id/godzina"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textColor="#f3dfc1"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/datagodzina"
+        android:layout_width="match_parent"
+        android:id="@+id/miasto"
+        android:layout_marginTop="10dp"
+        android:text=" "
+        android:textSize="46dp"
+        android:textColor="#ddbea8"
+        android:fontFamily="@font/semi"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="150dp"
+        android:id="@+id/ikona"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sun"
+        android:layout_margin="10dp"
+        android:layout_below="@id/miasto"
+
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/tempiweather"
+        android:layout_below="@id/ikona"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:text=" "
+            android:id="@+id/data"
+            android:gravity="center"
+            android:textColor="#160f29"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="44dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:text=" "
+            android:fontFamily="@font/semi"
+            android:id="@+id/weather"
+            android:textSize="22dp"
+            android:textColor="#160f29"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+
+            android:layout_weight="0.5"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/wpisz"
+        android:hint="Wpisz miasto"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/button"
+        android:gravity="center"
+        android:textColor="#e0fbfc"
+        android:cursorVisible="false"
+        android:textSize="30dp"
+        android:fontFamily="@font/bold"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        android:fontFamily="@font/semi"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/radius"
+        android:text="Sprawdź pogode" />
+
+
+
+
+
+</RelativeLayout>
